@@ -1,0 +1,95 @@
+{
+  "_id": "",
+  "subdomain": "cge",
+  "properties": {
+    "tipologias_anillo_2do_nivel": {
+      "elecdepi": "628573018328700007d4fb30",
+      "elecdepr": "6285730b8328700007d4fb48"
+    },
+    "rangos_sla": {
+      "sla": "631f6511ae1bdc0008a30ead",
+      "cincuentaochentaycinco": "631f6539ae1bdc0008a30ede",
+      "ochentacien": "631f6553ae1bdc0008a30f08",
+      "fuera_de_plazo": "631f6500ae1bdc0008a30e9f"
+      
+    }
+  },
+  "stateMachines": {
+    "anillo_2do_nivel": {
+      "_id": "6274025c1187ce000708127e",
+      "taskGroupId": "6274023e1187ce000708122e",
+      "groupId": "6274023e1187ce000708122e",
+      "systemUser":"",
+      "name": "Anillo 2do nivel",
+      "smStates": {
+        "caso_pendiente": "628553848328700007d48f1f",
+        "tratamiento_electrodependiente_paso_1": "628553e68328700007d48fd5",
+        "tratamiento_electrodependiente_paso_2": "628554ae8328700007d4904b",
+        "tratamiento_electrodependiente_paso_3": "628554b58328700007d4906b",
+        "tratamiento_electrodependiente_paso_4": "628554bc8328700007d4908d",
+        "tratamiento_riesgo_y_apr_paso_1": "628554c28328700007d490ad",
+        "caso_cerrado": "628553998328700007d48f3f"
+      },
+      "stateProperties": {},
+      "taskFilters": {
+        "casos_pendientes": "629a9eb008b9a6881aa3d636"
+      }
+    },
+    "sspp": {
+      "_id": "62cc60f64a129e0008b4202f",
+      "taskGroupId": "62cc60e24a129e0008b42011",
+      "systemUser": "--",
+      "groupId": "62cc60e24a129e0008b42011",
+      "smStates": {
+        "sspp__gestion_masiva": "630fccb75accdb00084d8b0d"
+      }
+    },
+    "gestion_de_servicio_tecnico": {
+      "_id": "62ec86e98060d300083fba50",
+      "taskGroupId": "62ec85628060d300083fb968",
+      "systemUser": "62ec85628060d300083fb969",
+      "smStates": {
+        "asignado_contratista_servicio_tecnico":"62ec88f28060d300083fbe94",
+        "asignado_a_brigada_servicio_tecnico":"62ec88da8060d300083fbe67"
+      }
+    },
+    "gestion_perdidas": {
+      "_id": "63126bd35f672700087faa26",
+      "taskGroupId": "63126bbb5f672700087fa9b8",
+      "systemUser": "63126bbb5f672700087fa9b9",
+      "smStates": {
+        "asignado_perdidas":"63126bfc5f672700087fab29",
+        "asignado3_perdidas":"63126bfc5f672700087fab2f"
+      }
+    }
+  },
+  "groups": {},
+  "surveys": {
+    "form__servicio12": "630d011cc6f6ad00080ef068",
+    "form__servicio19": "62cca821871bd60008f8a163",
+    "form__servicio24": "62cc66484a129e0008b42428"
+  },
+  "accessRoles": {
+    "brigadista_perdida": "630e898fc6f6ad0008111b32",
+    "brigadista_st": "6310eb2210865d00082660a2",
+    "contratista_perdida": "630e89bac6f6ad0008111c1d",
+    "contratista_st": "6310eb6910865d00082660f1",
+    "sap": "63353f91a232fc0008b1c54f",
+    "admin_sspp": "62cc5ed14a129e0008b41c1b",
+    "consultor_por_proceso_sspp": "62ccb54f871bd60008f8c7a0",
+    "consultor_por_usuario": "62ccc027871bd60008f8e199",
+    "coordinador_de_proceso": "62ccb564871bd60008f8c874",
+    "resolutor": "62ccb5ad871bd60008f8c979",
+    "solicitante_interno": "62ccb5c6871bd60008f8c983"
+  },
+  "jobTitles": {},
+  "messages": {},
+  "systemUser": {
+    "email": "system@cotalker.com",
+    "_id": ""
+  },
+  "adminUser": {
+    "email": "admin@cge.cotalker.com",
+    "_id": "627400d234b48d0db367db5f"
+  }
+}
